@@ -14,11 +14,8 @@ spec:
           yamlField: $.spec.input.helmChart.version
     # For those who want to identify Events using labels.
     - name: image-update
-      labels:
-        repoId: repo-1
-        appName: helloworld
       replacements:
-        - file: helloworld/deployment.yaml
+        - file: kubernetes/canary/deployment.yaml
           yamlField: $.spec.template.spec.containers[0].image
     # For those who want to update multiple files at once.
     - name: helloworld-image-update
