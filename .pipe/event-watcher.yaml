@@ -3,10 +3,10 @@ kind: EventWatcher
 spec:
   events:
     # For those who want to update the manifest file when a new docker image was pushed.
-    - name: helloworld-image-update
+    - name: lambda-image-update
       replacements:
-        - file: helloworld/deployment.yaml
-          yamlField: $.spec.template.spec.containers[0].image
+        - file: lambda/simple/function.yaml
+          yamlField: $.spec.image
     # For those who want to update the deployment config file when releasing a new Helm package.
     - name: helloworld-helm-release
       replacements:
