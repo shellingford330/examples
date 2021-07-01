@@ -1,7 +1,7 @@
 apiVersion: pipecd.dev/v1beta1
 kind: LambdaFunction
 spec:
-  name: SimpleFunction
+  name: s14272-lambda
   role: arn:aws:iam::289580178547:role/s14272-lambda
   image: 289580178547.dkr.ecr.ap-northeast-1.amazonaws.com/s14272-lambda-go:latest
   memory: 512
