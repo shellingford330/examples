@@ -7,3 +7,7 @@ spec:
       replacements:
         - file: kubernetes/canary/deployment.yaml
           yamlField: $.spec.template.spec.containers[0].image
+    - name: lambda-image-update
+      replacements:
+        - file: lambda/simple/function.yaml
+          yamlField: $.spec.image
