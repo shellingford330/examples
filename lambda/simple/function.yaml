@@ -7,6 +7,6 @@ spec:
   memory: 512
   timeout: 30
   environments:
-    FOO: bar
+    Env: dev
   tags:
     app: simple
